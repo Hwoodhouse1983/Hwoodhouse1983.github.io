@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* Default CSS */
+/* FONTS 
+font-family: 'Righteous', sans-serif; - h1 heading 
+font-family: 'Righteous', cursive; - comments, quotes  
+font-family: 'Righteous', cursive; - documents, forms 
+font-family: 'Righteous', sans-serif; - content, paragraphs
+*/
+*/ COLORS
+#000000; - Black 
+#F2490C; - Orange
+#FA415D; - Hot Pink 
+#F725B8; - Pinky Purple 
+#D2F3F7; - Pastel Ice Blue
+*/
+#wrapper {
+}
+body {
+max-width:1024px;
+margin:0 auto;
+font-size:16px;
+
+}
+h1 {
+}
+h2 {
+}
+h3 {
+}
+p {
+}
+/* PIERS */
+Columns of content across the page */
+.pier {
+display: block;
+float:left;
+margin: 1% 0 1% 1.6%;
+}
+.pier:first-child {margin-left: 0; }
+/*ORDER */
+/*Contains the tiers and piers */
+.order:before, .order:after {content:"";
+display:table; }
+.order:after { clear:both; }
+.order { zoom:1; /* For IE 6/7 */ }
+*/ Four Piers */
+.pier4of4 { width: 100%; }
+.pier3of4 { width: 74.6%; }
+.pier2of4 { width: 49.2%; }
+.pier1of4 { width: 23.8%; }
+/* GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+.pier { margin: 1% 0 1% 0% }
+.pier1of4, .pier2of4, .pier3of4, .pier4of4
+{ width:100%; }
+}
+/* End Four Piers */
+/* Three Piers */
+.pier3of3 { width: 100%; }
+.pier2of3 { width: 66.13%; }
+.pier1of3 { width: 32.26%; }
+/* GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+.pier { margin: 1% 0 1% 0% }
+.pier3of3, .pier2of3, .pier1of3, { width:100%; }
+}
+/* End Three Piers */
+.address { 
+font-family: 'Righteous', sans-serif; 
+
+color: #F725B8;
+
+text-align:right;
+}
+/* Navigation */
+.navtop {
+width: 100%;
+font-family: 'Righteous', cursive;
+float:right;
+
+}
+
+
+
+
+
+
+
+  
+
